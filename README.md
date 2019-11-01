@@ -31,10 +31,10 @@
         DataSize: 0x279
         Data:
     * Modificamos la línea **con terminación E0 de la sección setup**
-        * [image]
+        * [image] https://github.com/elcaza/acer-e15-amd-v/blob/master/images/Screenshot_2.png
         * En el penúltimo número que actualmente tiene un valor de **00** lo debemos sustituir por un **01**
     * Modificamos la línea **con terminación 140 de la sección setup**
-        * [image]
+        * [image] https://github.com/elcaza/acer-e15-amd-v/blob/master/images/Screenshot_3.png
         * En el antepenúltimo número que actualmente tiene un valor de **01** lo debemos sustituir por un **00**
     * Guardamos los cambios en el documento
 6. Cargamos la nueva configuración en la BIOS
