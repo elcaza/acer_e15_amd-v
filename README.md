@@ -10,14 +10,15 @@
 ### Procedimiento (uwu)
 1. Apagar windows defender
     * Abrir una consola powershell con privilegios de administrador
-        * Puedes hacerlo con (Ctrl+X+A) o cualquier otro
+        * Puedes hacerlo con (WINDOWS+X+A) o cualquier otro
     * Ejecutar
         * ``Set-MpPreference -DisableRealtimeMonitoring $true``
-2. Descargar los archivos desde https://github.com/elcaza/acer-e15-amd-v/ 
+        * Nota, ya no funciona. Debe hacerse manualmente el apagar Windows Defender.
+2. Descargar los archivos desde https://github.com/elcaza/acer_e15_amd-v/ 
 3. Con powershell (Con privilegios de administrador) situarse en la carpeta donde está el archivo H2OUVE.exe
 4. Sacar la configuración del BIOS actual
     * Posicionado en la ubicación de **H2OUVE.exe** ejecutar 
-    * ``H2OUVE.exe -gv bios.txt``
+    * ``.\H2OUVE.exe -gv bios.txt``
     * Y eso nos entregará un **bios.txt** con la configuración de la BIOS
 5. Modificamos el archivo **bios.txt** que ahora tenemos en la misma ruta. 
     * Para esto se recomienda usar un editor de texto como:
@@ -39,7 +40,7 @@
     * Guardamos los cambios en el documento
 6. Cargamos la nueva configuración en la BIOS
     * Desde el powershell de administrador ejecutamos 
-    * ``H2OUVE.exe -sv bios.txt``
+    * ``.\H2OUVE.exe -sv bios.txt``
     * Nos mostrará en consola varios mensajes diciendo que ha tenido éxito el parche (Podría mandar uno que otro error del que no tenemos que preocuparnos)
 7. Reiniciamos la computadora y disfrutamos de nuestra hipervirtualización activada
 8. Activar nuevamente windows defender
